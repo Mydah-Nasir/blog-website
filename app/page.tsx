@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-black">
+    <main className="bg-white min-h-screen">
       <header>
         <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
@@ -122,7 +122,7 @@ export default function Home() {
           </div>
         </nav>
       </header>
-      <p>WHAT IS GOOD HERE</p>
+      <p className="text-center text-[#333333] font-['Jost'] text-base font-normal">WHAT IS GOOD HERE</p>
     </main>
   );
 }
