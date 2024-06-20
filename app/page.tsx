@@ -1,5 +1,5 @@
-import Image from "next/image";
-
+import Image from "next/image"; 
+import BlogPost from "./blogpost";
 export default function Home() {
   return (
     <main className="bg-white min-h-screen">
@@ -122,7 +122,11 @@ export default function Home() {
           </div>
         </nav>
       </header>
+      <div className="bg-rose-200 flex justify-center items-center h-full w-full">
+      <img src="/beauty-lifestyle.jpg" className="w-1/3 h-3/4 my-10"/>
+      </div>
       <p className="text-center text-[#333333] font-sans text-base font-normal tracking-[.15em] my-5">WHAT IS GOOD HERE</p>
+      <BlogPost/>
       <p className="text-center text-[#333333] font-sans text-base font-normal text-[40px] my-5">Browse the
         <span className=""> Categories</span>
       </p>
