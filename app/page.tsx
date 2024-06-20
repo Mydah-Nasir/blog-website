@@ -126,8 +126,7 @@ export default function Home() {
       <img src="/beauty-lifestyle.jpg" className="w-1/3 h-3/4 my-10"/>
       </div>
       <p className="text-center text-[#333333] font-sans text-base font-normal tracking-[.15em] my-5">WHAT IS GOOD HERE</p>
-      <BlogPost/>
-      <p className="text-center text-[#333333] font-sans text-base font-normal text-[40px] my-5">Browse the
+      <p className="text-center text-[#333333] font-sans text-base font-normal text-4xl my-5">Browse the
         <span className=""> Categories</span>
       </p>
       <div className="container mx-auto px-4 py-8 w-4/5">
@@ -178,7 +177,7 @@ export default function Home() {
       </div>
     </div>
     <p className="text-center text-[#333333] mt-28 font-sans text-base font-normal tracking-[.15em] mb-5">OR</p>
-      <p className="text-center text-[#333333] font-sans text-base font-normal text-[40px] my-5">Grab a 
+      <p className="text-center text-[#333333] font-sans text-base font-normal text-4xl my-5">Grab a 
         <span className=""> Resource</span>
       </p>
       <div className="container mx-auto px-4 py-8 w-4/5">
@@ -228,6 +227,11 @@ export default function Home() {
 
       </div>
     </div>
+    <p className="text-center text-[#333333] mt-28 font-sans text-base font-normal tracking-[.15em] mb-5">LATEST POST</p>
+      <p className="text-center text-[#333333] font-sans text-base font-normal text-4xl my-5">From 
+        <span className=""> the Blog</span>
+      </p>
+    <BlogPost/>
     </main>
   );
 }
