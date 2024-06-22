@@ -1,5 +1,6 @@
 import Image from "next/image"; 
 import BlogPost from "./blogpost";
+import Footer from "./footer";
 export default function Home() {
   return (
     <main className="bg-white min-h-screen">
@@ -127,6 +128,7 @@ export default function Home() {
       </div>
       <p className="text-center text-[#333333] font-['Jost'] text-base font-normal">WHAT IS GOOD HERE</p>
       <BlogPost/>
+      <Footer/>
     </main>
   );
 }
