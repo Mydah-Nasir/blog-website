@@ -1,5 +1,6 @@
 import Image from "next/image";
 import BlogPost from "./blogpost";
+import Footer from "./footer";
 
 export default function Home() {
   return (
