@@ -1,7 +1,4 @@
-import Image from "next/image";
-import BlogPost from "./blogpost";
-
-export default function Home() {
+export default function Contact() {
   return (
     <main className="bg-white min-h-screen">
       <header>
@@ -104,7 +101,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="/contact"
+                    href="#"
                     className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     CONTACT
@@ -123,124 +120,64 @@ export default function Home() {
           </div>
         </nav>
       </header>
-      <h1 className="text-[100px] font-normal text-center text-[#444444] my-20">SundayRainday</h1>
       <div className="bg-rose-200 flex justify-center items-center h-full w-full">
-        <img src="/beauty-lifestyle.jpg" className="w-1/3 h-3/4 my-10" />
-      </div>
-      <p className="text-center text-[#333333] font-sans text-base font-normal tracking-[.15em] my-5">
-        WHAT IS GOOD HERE
-      </p>
-      <p className="text-center text-[#333333] font-sans text-base font-normal text-[40px] my-5">
-        Browse the
-        <span className=""> Categories</span>
-      </p>
-      <div className="container mx-auto px-4 py-8 w-2/3">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Card 1 */}
-          <div className="bg-white rounded-lg shadow-md relative">
+        <div className="w-2/3 mx-auto grid grid-cols-1 md:grid-cols-2 py-10">
+          <div>
             <img
-              src="https://i0.wp.com/www.sundayrainday.com/wp-content/uploads/2023/07/POST-Pinterest-Static-pins-template-2000-%C3%97-3000-px-2.png?w=1200&ssl=1"
+              src="https://i0.wp.com/www.sundayrainday.com/wp-content/uploads/2023/06/productive-ways-to-make-your-life-easier.webp?w=750&ssl=1"
               alt="Personal Growth"
-              className="w-full object-cover"
+              className="w-4/5 mr-0 object-cover mt-20 border-white border-8"
             />
-            <div className="absolute bottom-0 left-0 right-5 mb-[-20px] w-3/4 mx-auto">
-              <h3 className="text-center text-lg font-medium text-gray-800 bg-blue-100 rounded-full py-2">
-                personal growth
-              </h3>
-            </div>
           </div>
-
-          {/* Card 2 */}
-          <div className="bg-white rounded-lg shadow-md relative">
-            <img
-              src="https://i0.wp.com/www.sundayrainday.com/wp-content/uploads/2023/07/Styled-Stock-Society-Healthy-Habits-21-1-scaled.jpg?w=1200&ssl=1"
-              alt="Personal Growth"
-              className="w-full object-cover"
-            />
-            <div className="absolute bottom-0 left-0 right-5 mb-[-20px] w-3/4 mx-auto">
-              <h3 className="text-center text-lg font-medium text-gray-800 bg-blue-100 rounded-full py-2">
-                habits and routines
-              </h3>
-            </div>
-          </div>
-
-          {/* Card 3 */}
-          <div className="bg-white rounded-lg shadow-md relative">
-            <img
-              src="https://i0.wp.com/www.sundayrainday.com/wp-content/uploads/2023/07/Styled-Stock-Society-Matcha-Meditation-3-2-scaled.webp?fit=700%2C780&ssl=1"
-              alt="Personal Growth"
-              className="w-full object-cover"
-            />
-            <div className="absolute bottom-0 left-0 right-5 mb-[-20px] w-3/4 mx-auto">
-              <h3 className="text-center text-lg font-medium text-gray-800 bg-blue-100 rounded-full py-2">
-                productivity
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p className="text-center text-[#333333] mt-28 font-sans text-base font-normal tracking-[.15em] mb-5">
-        OR
-      </p>
-      <p className="text-center text-[#333333] font-sans text-base font-normal text-[40px] my-5">
-        Grab a<span className=""> Resource</span>
-      </p>
-      <div className="container mx-auto px-4 py-8 w-2/3">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Card 1 */}
-          <div className="bg-white rounded-lg shadow-md relative">
-            <img
-              src="https://i0.wp.com/www.sundayrainday.com/wp-content/uploads/2024/06/Make-it-happen-promo-2-1.webp?fit=780%2C780&ssl=1"
-              alt="Personal Growth"
-              className="w-full object-cover"
-            />
-            <div className="absolute bottom-0 left-0 right-5 mb-[-20px] w-3/4 mx-auto">
-              <h3 className="text-center text-lg font-medium text-gray-800 bg-blue-100 rounded-full py-2">
-                grab your copy
-              </h3>
-            </div>
-          </div>
-
-          {/* Card 2 */}
-          <div className="bg-white rounded-lg shadow-md relative">
-            <img
-              src="https://i0.wp.com/www.sundayrainday.com/wp-content/uploads/2024/06/Free-resource-library.webp?fit=780%2C780&ssl=1"
-              alt="Personal Growth"
-              className="w-full object-cover"
-            />
-            <div className="absolute bottom-0 left-0 right-5 mb-[-20px] w-3/4 mx-auto">
-              <h3 className="text-center text-lg font-medium text-gray-800 bg-blue-100 rounded-full py-2">
-                get free access
-              </h3>
-            </div>
-          </div>
-
-          {/* Card 3 */}
-          <div className="bg-white rounded-lg shadow-md relative">
-            <img
-              src="https://i0.wp.com/www.sundayrainday.com/wp-content/uploads/2024/06/Vision-board-template-promo.webp?fit=780%2C780&ssl=1"
-              alt="Personal Growth"
-              className="w-full object-cover"
-            />
-            <div className="absolute bottom-0 left-0 right-5 mb-[-20px] w-3/4 mx-auto">
-              <h3 className="text-center text-lg font-medium text-gray-800 bg-blue-100 rounded-full py-2">
-                grab your copy
-              </h3>
-            </div>
+          <div className="w-4/5 ml-0">
+            <p className="text-center text-[#333333] font-sans text-base font-normal tracking-[.15em] mb-2">
+              GET IN TOUCH
+            </p>
+            <p className="text-center text-[#333333] font-sans text-base font-normal text-4xl mb-2">
+              Say
+              <span className=""> Hello</span>
+            </p>
+            <p className="text-center text-[#444444] font-normal text-lg">
+              Whether you are a reader or a company interested in working with
+              SundayRainday, free to contact us using the form below.
+            </p>
+            <p className="text-center text-[#444444] font-normal text-lg mt-5">
+              You can also send an e-mail to contact@SundayRainday.com. All
+              e-mails are answered within 48 hours.
+            </p>
+            <form className="max-w-sm mx-auto">
+              <input
+                type="name"
+                id="name"
+                aria-describedby="helper-text-explanation"
+                className="my-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="name*"
+              />
+              <input
+                type="email"
+                id="email"
+                aria-describedby="helper-text-explanation"
+                className="my-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="email*"
+              />
+              <input
+                type="subject"
+                id="subject"
+                aria-describedby="helper-text-explanation"
+                className="my-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="subject*"
+              />
+              <textarea
+                id="message"
+                rows={4}
+                className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="message*"
+              />
+            </form>
           </div>
         </div>
       </div>
-      <p className="text-center text-[#333333] mt-28 font-sans text-base font-normal tracking-[.15em] mb-5">
-        LATEST POST
-      </p>
-      <p className="text-center text-[#333333] font-sans text-base font-normal text-[40px] my-5">
-        From
-        <span className=""> the Blog</span>
-      </p>
-      <BlogPost imageUrl={'https://i0.wp.com/www.sundayrainday.com/wp-content/uploads/2024/05/how-to-create-a-vision-board-that-manifests-2-1.webp?resize=825%2C930&ssl=1'}/>
-      <BlogPost imageUrl="https://i0.wp.com/www.sundayrainday.com/wp-content/uploads/2024/04/benefits-of-slow-living-2.webp?resize=665%2C750&ssl=1" />
-      <BlogPost imageUrl="https://i0.wp.com/www.sundayrainday.com/wp-content/uploads/2024/04/13-habits-to-improve-your-mood-1.webp?resize=665%2C750&ssl=1" />
-      <BlogPost imageUrl="https://i0.wp.com/www.sundayrainday.com/wp-content/uploads/2024/04/five-minute-habits-to-improve-your-health.webp?resize=665%2C750&ssl=1" />
+      <div className="bg-white min-h-20"></div>
     </main>
   );
 }
