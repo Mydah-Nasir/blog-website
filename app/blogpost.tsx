@@ -28,7 +28,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ imageUrl }) => {
               that are super easy to integrate into[...]
             </p>
             <a
-              href="#"
+              href="/blog"
               className="mt-4 inline-block text-blue-600 hover:underline"
             >
               Read more...
