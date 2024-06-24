@@ -13,7 +13,7 @@ export default function Home() {
       <p className="text-center text-[#333333] font-sans text-base font-normal tracking-[.15em] my-5">
         WHAT IS GOOD HERE
       </p>
-      <p className="text-center text-[#333333] font-sans text-base font-normal text-[40px] my-5">
+      <p className="text-center text-[#333333] font-sans font-normal text-[40px] my-5">
         Browse the
         <span className=""> Categories</span>
       </p>
@@ -65,7 +65,7 @@ export default function Home() {
       <p className="text-center text-[#333333] mt-28 font-sans text-base font-normal tracking-[.15em] mb-5">
         OR
       </p>
-      <p className="text-center text-[#333333] font-sans text-base font-normal text-[40px] my-5">
+      <p className="text-center text-[#333333] font-sans font-normal text-[40px] my-5">
         Grab a<span className=""> Resource</span>
       </p>
       <div className="container mx-auto px-4 py-8 w-2/3">
@@ -116,7 +116,7 @@ export default function Home() {
       <p className="text-center text-[#333333] mt-28 font-sans text-base font-normal tracking-[.15em] mb-5">
         LATEST POST
       </p>
-      <p className="text-center text-[#333333] font-sans text-base font-normal text-[40px] my-5">
+      <p className="text-center text-[#333333] font-sans font-normal text-[40px] my-5">
         From
         <span className=""> the Blog</span>
       </p>
