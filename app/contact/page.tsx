@@ -14,18 +14,18 @@ export default function Contact() {
             />
           </div>
           <div className="w-4/5 ml-0">
-            <p className="text-center text-[#333333] font-sans text-base font-normal tracking-[.15em] mb-2">
+            <p className="text-center text-[#333333] font-jost text-sm font-normal tracking-[.15em] mb-2">
               GET IN TOUCH
             </p>
-            <p className="text-center text-[#333333] font-sans text-base font-normal text-4xl mb-2">
+            <p className="text-center text-[#333333] font-jost font-normal text-4xl mb-2">
               Say
-              <span className=""> Hello</span>
+              <span className=""> Hello!</span>
             </p>
-            <p className="text-center text-[#444444] font-normal text-lg">
+            <p className="text-center text-[#444444] font-normal font-montserrat text-lg">
               Whether you are a reader or a company interested in working with
               SundayRainday, free to contact us using the form below.
             </p>
-            <p className="text-center text-[#444444] font-normal text-lg mt-5">
+            <p className="text-center text-[#444444] font-normal font-montserrat text-lg mt-5">
               You can also send an e-mail to contact@SundayRainday.com. All
               e-mails are answered within 48 hours.
             </p>

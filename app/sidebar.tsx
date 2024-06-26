@@ -5,8 +5,8 @@ const Sidebar: React.FC = () =>{
         <div className="flex flex-col items-center">
           <img src="https://www.sundayrainday.com/wp-content/uploads/2023/07/Styled-Stock-Society-Summer-Weekend-23-scaled.jpg" alt="Author" className="w-full h-auto mb-4" />
           <div className="text-center">
-            <h2 className="text-2xl font-bold mb-2">Hi, I am Sofia</h2>
-            <p>I am a 30-year-old obsessed with Productivity and Personal Growth. I help young, ambitious women increase their productivity and design a life they love.</p>
+            <h2 className="text-lg font-semibold mb-2 font-jost text-[#444444]">Hi, I am Sofia</h2>
+            <p className='font-montserrat text-[#444444] text-sm'>I am a 30-year-old obsessed with Productivity and Personal Growth. I help young, ambitious women increase their productivity and design a life they love.</p>
           </div>
         </div>
         <div className="bg-rose-100 p-6 text-center my-4 mb-8">
@@ -31,26 +31,26 @@ const Sidebar: React.FC = () =>{
       fill="#111827" />
     </svg></a>
        </div>
-    <h2 className="text-2xl font-bold mb-4">Subscribe</h2>
-    <p className="mb-4">Join +5,000 weekly readers and unlock the Free Library</p>
-    <button className="bg-white text-blue-500 font-semibold px-4 py-2 rounded-full">Yes, Please!</button>
+    <h2 className="text-2xl font-bold mb-4 font-playfair">Subscribe</h2>
+    <p className="mb-4 font-montserrat">Join +5,000 weekly readers and unlock the Free Library</p>
+    <button className="font-montserrat bg-white text-blue-500 font-semibold px-4 py-2 rounded-full">Yes, Please!</button>
   </div>
   <div className="relative mb-8">
     <img src="/lifestyle-blog.jpg" alt="alt" className="w-full h-auto rounded-lg" />
     <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white px-4 py-2 rounded-full shadow-lg">
-      <span className="text-gray-700 font-semibold">Personal Growth</span>
+      <span className="text-gray-700 font-semibold font-montserrat">Personal Growth</span>
     </div>
   </div>
   <div className="relative mb-8">
     <img src="/beauty-lifestyle.jpg" alt="alt" className="w-full h-auto rounded-lg" />
     <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white px-4 py-2 rounded-full shadow-lg">
-      <span className="text-gray-700 font-semibold">Life Style</span>
+      <span className="text-gray-700 font-semibold font-montserrat">Life Style</span>
     </div>
   </div>
   <div className="relative mb-8">
     <img src="/skin-care.jpg" alt="alt" className="w-full h-auto rounded-lg" />
     <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white px-4 py-2 rounded-full shadow-lg">
-      <span className="text-gray-700 font-semibold">Skin Care</span>
+      <span className="text-gray-700 font-semibold font-montserrat">Skin Care</span>
     </div>
   </div>
       </div>

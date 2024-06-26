@@ -17,7 +17,7 @@ export const fetchBlogPosts = async (): Promise<BlogPost[]> => {
   const blogPosts = response.items.map((item: any) => ({
     imageSrc: item.fields.picture.fields.file.url,
     title: item.fields.title,
-    date: item.fields.publishDate,
+    date: item.fields.date,
     summary: item.fields.title,
     slug:item.fields.slug
   }));

@@ -3,7 +3,7 @@ import React from 'react';
 const Header: React.FC = () => {
   return (
     <header>
-        <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+        <nav className="bg-white font-bold border-gray-200 px-4 mx-auto lg:px-6 py-2.5 dark:bg-gray-800 font-montserrat">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <a href="https://flowbite.com" className="flex items-center">
               <img
@@ -18,7 +18,7 @@ const Header: React.FC = () => {
             <div className="flex items-center lg:order-2">
               <a
                 href="#"
-                className="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+                className="text-gray-800 font-bold dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
               >
                 Log in
               </a>
@@ -66,16 +66,7 @@ const Header: React.FC = () => {
               className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
               id="mobile-menu-2"
             >
-              <ul className="flex flex-col mt-4 font-medium font-sans text-[12px] tracking-[.15em] lg:flex-row lg:space-x-8 lg:mt-0">
-                <li>
-                  <a
-                    href="/"
-                    className="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
-                    aria-current="page"
-                  >
-                    HOME
-                  </a>
-                </li>
+              <ul className="flex flex-col mt-4 font-bold font-montserrat text-[11px] tracking-[.15em] lg:flex-row lg:space-x-8 lg:mt-0">
                 <li>
                   <a
                     href="/"

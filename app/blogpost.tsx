@@ -14,14 +14,14 @@ const BlogPost: React.FC<BlogPostProps> = ({ imageUrl }) => {
         />
         <div className="xl:absolute bottom-0 right-10 py-5 mb-20 xl:w-1/2 w-4/5 bg-white">
           <div className="mt-6 md:mt-0 md:ml-6">
-            <p className="text-sm text-gray-500 uppercase tracking-wide font-semibold">
+            <p className="text-xs text-[#1A61A2] font-jost uppercase tracking-[.15em] font-medium">
               Habits & Routines
             </p>
-            <h2 className="mt-2 text-2xl font-bold text-gray-900">
+            <h2 className="mt-2 text-3xl font-medium font-playfair text-[#333333]">
               15 Essential Five-Minute Habits To Improve Your Health
             </h2>
-            <p className="mt-2 text-sm text-gray-500">April 13, 2024</p>
-            <p className="mt-4 text-gray-700">
+            <p className="mt-2 text-xs text-[#1A61A2] font-jost uppercase tracking-[.15em] font-medium">April 13, 2024</p>
+            <p className="mt-4 text-[#444444] font-montserrat text-lg">
               It may often seem impossible to find time for self-care when life
               gets busy. However, taking care of our health is key to living a
               happy, productive life. The good news is that many small habits
@@ -29,7 +29,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ imageUrl }) => {
             </p>
             <a
               href="/blog"
-              className="mt-4 inline-block text-blue-600 hover:underline"
+              className="mt-4 inline-block text-blue-600 hover:underline font-montserrat text-sm"
             >
               Read more...
             </a>

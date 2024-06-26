@@ -17,7 +17,7 @@ const BlogPage: React.FC = async () => {
         {/* Main Content */}
         <div className="lg:col-span-2">
           <div className="mb-8">
-            <p className="text-center text-[#333333] font-sans text-2xl font-normal tracking-[.15em] mb-5">
+            <p className="text-center text-[#333333] font-playfair text-3xl font-normal tracking-wide mb-5">
              Latest Posts about Personal Growth
             </p>
           </div>
