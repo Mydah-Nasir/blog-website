@@ -1,6 +1,109 @@
+"use client";
 import Header from "../header";
 import Footer from "../footer";
-export default function Contact() {
+import React, { useState } from 'react';
+  
+const Contact = () => {
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [subject, setSubject] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+  const [errors, setErrors] = useState<Errors>({});
+  function validateFullname(fullname: string) {
+    if (/^[A-Za-z\s]+$/.test(fullname)) {
+      return true;
+    }
+    return false;
+  }
+  function validateEmail(email: string) {
+    if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      return true;
+    }
+
+    return false;
+  }
+  interface Errors {
+    fullname?: string;
+    email?: string;
+    message?: string;
+    // Add more error fields as needed
+  }
+  function checkMinLength(str: string, min_len: number) {
+    if (str.length < min_len) {
+      return false;
+    }
+
+    return true;
+  }
+  function checkMaxLength(str: string, max_len: number) {
+    if (str.length > max_len) {
+      return false;
+    }
+
+    return true;
+  }
+  function validateForm(
+    fullname: string,
+    email: string,
+    message: string
+  ): Errors {
+    const errors: Errors = {};
+
+    if (!fullname) {
+      errors.fullname = "Fullname is required.";
+    } else if (!validateFullname(fullname)) {
+      errors.fullname = "Only alphabetic characters are allowed.";
+    } else if (!checkMinLength(fullname, 2)) {
+      errors.fullname = "Name must be at least 2 characters long.";
+    } else if (!checkMaxLength(fullname, 50)) {
+      errors.fullname = "Name should not exceed 50 characters.";
+    }
+    if (!email) {
+      errors.email = "Email is required.";
+    } else if (!validateEmail(email)) {
+      errors.email = "Invalid format for email address.";
+    }
+    if (!message) {
+      errors.message = "Message is required";
+    }
+    return errors;
+  }
+  const collectData = async (event: React.MouseEvent<HTMLButtonElement>) => {
+    // Validate the form input
+    event.preventDefault();
+    const errors = validateForm(name, email, message);
+    setErrors(errors);
+    if (Object.keys(errors).length === 0) {
+      try {
+        const res = await fetch("/api/contact", {
+          body: JSON.stringify({
+            send_to: email,
+            name: name,
+            subject: subject, // Make sure 'subject' is defined somewhere
+            message: message,
+          }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+          method: "POST",
+        });
+        const result = await res.json();
+        // console.log(result);
+        if (result.status) {
+          window.alert("Message sent sucessfully");
+          setEmail("");
+          setName("");
+          setSubject("");
+          setMessage("");
+        }
+        // Handle the response as needed
+      } catch (error) {
+        // Handle fetch error
+        console.error("Error sending data:", error);
+      }
+    }
+  };
+
   return (
     <main className="bg-white min-h-screen">
       <Header/>
@@ -33,6 +136,10 @@ export default function Contact() {
               <input
                 type="name"
                 id="name"
+                name="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
                 aria-describedby="helper-text-explanation"
                 className="my-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="name*"
@@ -40,13 +147,20 @@ export default function Contact() {
               <input
                 type="email"
                 id="email"
+                name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
                 aria-describedby="helper-text-explanation"
                 className="my-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="email*"
               />
               <input
-                type="subject"
                 id="subject"
+                name="subject"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+                required
                 aria-describedby="helper-text-explanation"
                 className="my-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="subject*"
@@ -54,9 +168,21 @@ export default function Contact() {
               <textarea
                 id="message"
                 rows={4}
+                name="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                required
                 className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="message*"
               />
+              <button
+                      id="first-button"
+                      type="submit"
+                      onClick={collectData}
+                      className="rounded-md mt-5 bg-rose-400 py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
+                    >
+                      Submit
+                </button>
             </form>
           </div>
         </div>
@@ -66,3 +192,4 @@ export default function Contact() {
     </main>
   );
 }
+export default Contact;
